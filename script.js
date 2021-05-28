@@ -1,9 +1,10 @@
 function compute()
 {
+    //setting variables in the function
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
-    var years = document.getElementById("year").value;
-    var interest = principal*(1+rate)**years;
+    var years = document.getElementById("years").value;
+    var interest = principal * years * rate *12/ 100;
     
     var futureyear = parseInt(years) + 2020
     var result = document.getElementById("result");
