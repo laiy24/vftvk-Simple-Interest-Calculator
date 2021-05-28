@@ -1,11 +1,12 @@
-function compute()
-{
+function compute() {
+    
     //setting variables in the function
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var interest = principal * years * rate *12/ 100;
     
+    // Converts 'No of years' into actual year in the future
     var futureyear = parseInt(years) + 2020
     var result = document.getElementById("result");
     
@@ -20,9 +21,8 @@ function compute()
         return false;
     
       } 
-}
+    }
 function setSliderLabel() {
     var rate = document.getElementById("rate").value;
     document.getElementById("rate_span").innerHTML = rate + "%";
- }      
-        
+ }    
