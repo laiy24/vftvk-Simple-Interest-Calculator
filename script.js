@@ -4,7 +4,7 @@ function compute() {
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
-    var interest = principal *(1+rate/100)**years-principal;
+    var interest = principal *(rate/100)*years;
     
     // Converts 'No of years' into actual year in the future
     var futureyear = parseInt(years) + 2020
